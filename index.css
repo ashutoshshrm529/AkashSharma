@@ -1,0 +1,272 @@
+/* * { border: 1px solid red; } */
+::-webkit-scrollbar { display: none; }
+
+html
+{
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+}
+
+body
+{
+    position:absolute;
+
+    width: calc(100vw - (240 / 1440 * 100vw));
+    height: 100%;
+
+    padding: 0px calc(120 / 1440 * 100vw);
+    margin: 0px;
+    overflow-y: scroll;
+
+    font-family: 'Bentham', serif;
+}
+
+.header
+{
+    position: relative;
+
+    width: 100%;
+    height: calc(260 / 900 * 100vh);
+
+    border-bottom: 1px solid #999999;
+}
+
+.header .name
+{
+    position: absolute;
+    top: calc(100 / 900 * 100vh);
+    left: calc(80 / 1440 * 100vw);
+
+    font-size: calc(36 / 900 * 100vh);
+    text-transform: capitalize;
+}
+
+.header .links
+{
+    position: absolute;
+    top: calc(143 / 900 * 100vh);
+    left: calc(80 / 1440 * 100vw);
+
+    width: calc(600 / 1440 * 100vw);
+
+    font-size: calc(20 / 900 * 100vh);
+    color: #999999;
+}
+
+.header .image
+{
+    position: absolute;
+    top: calc(50% - (100 / (1440 + 900) * (100vw + 100vh)));
+    right: calc(80 / 1440 * 100vw);
+
+    height: calc(200 / (1440 + 900) * (100vw + 100vh));
+    width: calc(200 / (1440 + 900) * (100vw + 100vh));
+
+    border-radius: calc(30 / (1440 + 900) * (100vw + 100vh));
+
+    background-image: url('images/AkashSharma.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about
+{
+    position: relative;
+    top: 0px;
+
+    width: calc(100% - (200 / 1440 * 100vw));
+
+    padding: calc(50 / 900 * 100vh) calc(100 / 1440 * 100vw);
+    font-size: calc(20 / 900 * 100vh);
+
+    border-bottom: 1px solid #999999;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.main
+{
+    position: relative;
+
+    width: 100%;
+    box-sizing: border-box;
+    margin: calc(50 / 900 * 100vh) 0px;
+}
+
+.main .menu
+{
+    position: absolute;
+
+    width: 0px;
+    overflow: hidden;
+
+    color: #999999;
+}
+
+.main .menu .heading
+{
+    font-size: calc(30 / 900 * 100vh);
+    padding: calc(15 / 900 * 100vh) 0px;
+}
+
+.main .menu .text
+{
+    font-size: calc(20 / 900 * 100vh);
+    padding: calc(5 / 900 * 100vh) 0px;
+}
+
+.main .body
+{
+    position: relative;
+
+    width: 100%;
+}
+
+.main .body .heading
+{
+    font-size: calc(36 / 900 * 100vh);
+    padding: calc(10 / 900 * 100vh) 0px;
+}
+
+.main .body .textbox
+{
+    font-size: calc(20 / 900 * 100vh);
+    padding: calc(40 / 900 * 100vh) 0px;
+}
+
+.main .body .imagecontent
+{
+    position: relative;
+
+    width: 100%;
+    min-height: calc(200 / (1440 + 900) * (100vw + 100vh));;
+
+    margin: calc(40 / 900 * 100vh) 0px;
+}
+
+.main .body .imagecontent .image
+{
+    position: absolute;
+
+    height: calc(200 / (1440 + 900) * (100vw + 100vh));
+    width: calc(200 / (1440 + 900) * (100vw + 100vh));
+
+    background-color: #c4c4c4;
+    border-radius: calc(30 / 900 * 100vh);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main .body .imagecontent .title,
+.main .body .imagecontent .author,
+.main .body .imagecontent .published,
+.main .body .imagecontent .text
+{
+    position: relative;
+    left: calc(200 / (1440 + 900) * (100vw + 100vh));
+
+    width: calc(100% - (200 / (1440 + 900) * (100vw + 100vh)));
+
+    font-size: calc(25 / (1440 + 900) * (100vw + 100vh));
+    padding-top: calc(5 / 900 * 100vh);
+    padding-left: calc(30 / 1440 * 100vw);
+}
+
+.main .body .imagecontent .title
+{
+    font-size: calc(30 / (1440 + 900) * (100vw + 100vh));
+}
+
+.footer
+{
+    position: relative;
+
+    width: 100%;
+    height: calc(200 / 900 * 100vh);
+
+    border-top: 1px solid #999999;
+}
+
+.footer .name
+{
+    position: relative;
+    top: calc(60 / 900 * 100vh);
+    left: 0px;
+
+    width: 100%;
+
+    font-size: calc(36 / (1440 + 900) * (100vw + 100vh));
+
+    text-align: center;
+}
+
+.footer .links
+{
+    position: relative;
+    top: calc(60 / 900 * 100vh);
+    left: 0px;
+
+    width: 100%;
+
+    font-size: calc(20 / (1440 + 900) * (100vw + 100vh));
+    text-align: center;
+    color: #999999;
+}
+
+.footer .source
+{
+    position: absolute;
+    bottom: calc(10 / 900 * 100vh);
+    right: 0px;
+
+    font-size: calc(20 / (1440 + 900) * (100vw + 100vh));
+    color: #999999;
+}
+
+a
+{
+    color: inherit;
+}
+
+a:hover
+{
+    color: #f4ae12;
+}
+
+@media only screen and (min-width: 768px) {
+    .main .menu
+    {
+        width: calc(39% - (60 / 1440 * 100vw));
+        padding: 0px calc(30 / 1440 * 100vw);
+    }
+
+    .main .body
+    {
+        left: 39%;
+        width: calc(61% - (80 / 1440 * 100vw));
+        border-left: 1px solid #999999;
+        padding-left: calc(50 / 1440 * 100vw);
+    }
+
+    .main .body .textbox
+    {
+        padding-right: calc(30 / 1440 * 100vw);
+    }
+
+    .main .body .imagecontent .author,
+    .main .body .imagecontent .published,
+    .main .body .imagecontent .text
+    {
+        font-size: calc(18 / (1440 + 900) * (100vw + 100vh));
+    }
+
+    .main .body .imagecontent .title
+    {
+        font-size: calc(20 / (1440 + 900) * (100vw + 100vh));
+    }
+}
