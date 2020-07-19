@@ -57,7 +57,7 @@ body
 {
     position: relative;
 
-    width: calc(100% - (400 / 1440 * 100vw));
+    width: 100%;
     height: calc(260 / 900 * 100vh);
 
     border-bottom: 1px solid #999999;
@@ -110,7 +110,7 @@ body
     position: relative;
     top: 0px;
 
-    width: calc(100% - (600 / 1440 * 100vw));
+    width: calc(100% - (200 / 1440 * 100vw));
 
     padding: calc(50 / 900 * 100vh) calc(100 / 1440 * 100vw);
     font-size: calc(14 / 900 * 100vh);
@@ -128,7 +128,7 @@ body
 {
     position: relative;
 
-    width: calc(100% - (400 / 1440 * 100vw));
+    width: 100%;
     box-sizing: border-box;
     margin: calc(30 / 900 * 100vh) 0px;
 }
@@ -191,11 +191,27 @@ body
     height: calc(150 / (1440 + 900) * (100vw + 100vh));
     width: calc(150 / (1440 + 900) * (100vw + 100vh));
 
-    background-color: #c4c4c4;
+    background-color: #ffffff;
     border-radius: calc(30 / 900 * 100vh);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+#inspectionSystem
+{
+    background-image: url('data/images/vision_inspection.jpg');
+    background-size: contain;
+}
+
+#quadrotor
+{
+    background-image: url('data/images/kinect_quadrotor.jpg');
+}
+
+#MipRobot
+{
+    background-image: url('data/images/mip-robot.gif');
 }
 
 .main .body .imagecontent .title,
@@ -217,8 +233,7 @@ body
 {
     position: relative;
 
-    width: calc(100% - (400 / 1440 * 100vw));
-    /* width: 100%; */
+    width: 100%;
     height: calc(200 / 900 * 100vh);
 
     border-top: 1px solid #999999;
@@ -270,16 +285,22 @@ a
 }
 
 @media only screen and (min-width: 768px) {
+    body
+    {
+        width: calc(100vw - (600 / 1440 * 100vw));
+        padding: 0px calc(300 / 1440 * 100vw);
+    }
+
     .main .menu
     {
-        width: calc(28% - (80 / 1440 * 100vw));
-        padding: 0px calc(30 / 1440 * 100vw);
+        width: calc(28% - (60 / 1440 * 100vw));
+        padding: 0px calc(30/ 1440 * 100vw);
     }
 
     .main .body
     {
         left: 28%;
-        width: calc(72% - (80 / 1440 * 100vw));
+        width: calc(72% - (60 / 1440 * 100vw));
         border-left: 1px solid #999999;
         padding-left: calc(30 / 1440 * 100vw);
     }
@@ -299,23 +320,5 @@ a
     .main .body .imagecontent .title
     {
         font-size: calc(16 / (1440 + 900) * (100vw + 100vh));
-    }
-}
-
-@media only screen and (min-width: 1024px) {
-    body
-    {
-        width: calc(1024px);
-        padding: 0px;
-        left: calc(50% - 512px);
-    }
-}
-
-@media only screen and (min-width: 1440px) {
-    body
-    {
-        width: calc(100vw - (240 / 1440 * 100vw));
-        padding: 0px calc(120 / 1440 * 100vw);
-        left: 0px
     }
 }
