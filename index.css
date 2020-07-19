@@ -35,6 +35,7 @@ body
     overflow-y: scroll;
 
     font-family: 'CMU-Serif', serif;
+    text-align: justify;
 }
 
 .header
