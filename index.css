@@ -1,6 +1,13 @@
 /* * { border: 1px solid red; } */
 ::-webkit-scrollbar { display: none; }
 
+@font-face {
+    font-family: CMU-Serif;
+    src: url("CMU-Serif.otf") format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
 html
 {
     width: 100%;
@@ -20,7 +27,7 @@ body
     margin: 0px;
     overflow-y: scroll;
 
-    font-family: 'Bentham', serif;
+    font-family: 'CMU-Serif', serif;
 }
 
 .header
@@ -83,6 +90,11 @@ body
     font-size: calc(20 / 900 * 100vh);
 
     border-bottom: 1px solid #999999;
+}
+
+.heading
+{
+    color: #f2120b;
 }
 
 .main
