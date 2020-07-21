@@ -187,6 +187,7 @@ body
 .main .body .imagecontent .image
 {
     position: absolute;
+    margin-top: calc(5 / 900 * 100vh);
 
     height: calc(150 / (1440 + 900) * (100vw + 100vh));
     width: calc(150 / (1440 + 900) * (100vw + 100vh));
@@ -232,7 +233,7 @@ body
 
     width: calc(100% - (200 / (1440 + 900) * (100vw + 100vh)));
 
-    font-size: calc(14 / (1440 + 900) * (100vw + 100vh));
+    font-size: calc(24 / (1440 + 900) * (100vw + 100vh));
     padding-top: calc(5 / 900 * 100vh);
     padding-left: calc(30 / 1440 * 100vw);
 }
@@ -244,7 +245,7 @@ body
 
     width: calc(100% - (200 / (1440 + 900) * (100vw + 100vh)));
 
-    font-size: calc(8 / (1440 + 900) * (100vw + 100vh));
+    font-size: calc(16 / (1440 + 900) * (100vw + 100vh));
     padding-top: calc(5 / 900 * 100vh);
     padding-left: calc(30 / 1440 * 100vw);
 }
@@ -258,7 +259,7 @@ body
     width: calc(100% - (200 / (1440 + 900) * (100vw + 100vh)));
 
     font-family: 'CMU-Bright-Oblique';
-    font-size: calc(12 / (1440 + 900) * (100vw + 100vh));
+    font-size: calc(18 / (1440 + 900) * (100vw + 100vh));
     padding-top: calc(5 / 900 * 100vh);
     padding-left: calc(30 / 1440 * 100vw);
 }
@@ -295,7 +296,7 @@ body
 
     width: 100%;
 
-    font-size: calc(14 / (1440 + 900) * (100vw + 100vh));
+    font-size: calc(15 / (1440 + 900) * (100vw + 100vh));
     text-align: center;
     color: #999999;
 }
@@ -306,7 +307,7 @@ body
     bottom: calc(10 / 900 * 100vh);
     right: 0px;
 
-    font-size: calc(14 / (1440 + 900) * (100vw + 100vh));
+    font-size: calc(16 / (1440 + 900) * (100vw + 100vh));
     color: #999999;
 }
 
@@ -341,7 +342,7 @@ a
 
     .main .body .textbox
     {
-        padding-right: calc(20 / 1440 * 100vw);
+        padding-right: calc(15 / 1440 * 100vw);
     }
 
     .main .body .imagecontent .author,
@@ -353,6 +354,6 @@ a
 
     .main .body .imagecontent .title
     {
-        font-size: calc(16 / (1440 + 900) * (100vw + 100vh));
+        font-size: calc(18 / (1440 + 900) * (100vw + 100vh));
     }
 }
